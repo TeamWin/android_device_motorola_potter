@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/motorola/sanders
+LOCAL_PATH := device/motorola/potter
 
 # Architecture
 TARGET_ARCH := arm
@@ -38,8 +38,8 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
-BOARD_MKBOOTIMG_ARGS :=  --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --kernel_offset 0x00008000 --dt device/motorola/sanders/dt.img
-BOARD_CUSTOM_BOOTIMG_MK := device/motorola/sanders/mkbootimg.mk
+BOARD_MKBOOTIMG_ARGS :=  --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --kernel_offset 0x00008000 --dt device/motorola/potter/dt.img
+BOARD_CUSTOM_BOOTIMG_MK := device/motorola/potter/mkbootimg.mk
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 
 # Partitions
